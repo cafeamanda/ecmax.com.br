@@ -1,0 +1,191 @@
+<div class="container-fluid container-content-app">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+    <li class="breadcrumb-item"><a ui-sref="app">Produtos</a></li>
+    <li class="breadcrumb-item active">Coluna e ortopedia</li>
+  </ol>
+  <h3 class="segmentos-header"><a ui-sref="app"><i class="fa fa-angle-double-left"></i> Coluna e ortopedia</a></h3>
+  <uib-tabset active="activeJustified" justified="true">
+    <uib-tab index="0">
+      <uib-tab-heading>
+        <img src="images/logos/color/spasy.png" class="tab-heading-img">
+      </uib-tab-heading>
+      <div class="container">
+        <h1 class="text-center">
+          <img src="images/logos/color/spasy.png" class="center-block img-responsive header-logo">
+          Cifoplastia com balão
+        </h1>
+        <div class="row">
+          <img src="images/produtos/spasy/cifoplastia-com-balao.png" class="img-responsive img-top-products center-block">
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6" ng-repeat="product in spasyproducts">
+            <div class="row row-center">
+              <div class="col-xs-12 col-sm-6">
+                <img src="images/produtos/spasy/{{product.filename}}" class="img-responsive center-block">
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <h4>{{product.name}}</h4>
+                <p>({{product.code}})</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </uib-tab>
+    <uib-tab index="1">
+      <uib-tab-heading>
+        <img src="images/logos/color/zenius.png" class="tab-heading-img">
+      </uib-tab-heading>
+      <div class="container">
+        <h1 class="text-center">
+          <img src="images/logos/color/zenius.png" class="center-block img-responsive header-logo">
+          Sistema de Fijación Espinal
+        </h1>
+        <div class="row">
+          <img src="images/produtos/zenius/sistema-de-fijacion-espinal.png" class="img-responsive img-top-products center-block">
+        </div>
+        <div class="row">
+          <h1 class="text-center"></h1>
+          <div class="col-xs-12 col-sm-6" ng-repeat="product in zeniusproducts">
+            <div class="row row-center">
+              <div class="col-xs-12 col-sm-6">
+                <h4 class="text-right">{{product.name}}</h4>
+                <div ng-repeat="model in product.model">
+                  <p class="text-right">
+                    {{model.type}} ({{model.code}})
+                  </p>
+                </div>
+                <p class="text-right"><small><em><small>{{product.obs}}</small></em></small></p>
+              </div>
+              <div class="col-xs-12 col-sm-4">
+                <img src="images/produtos/zenius/{{product.filename}}" class="img-responsive">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </uib-tab>
+    <uib-tab index="2">
+      <uib-tab-heading>
+        <img src="images/logos/color/waveflex.png" class="tab-heading-img">
+      </uib-tab-heading>
+      <div class="container">
+        <h1 class="text-center">
+          <img src="images/logos/color/waveflex.png" class="center-block img-responsive header-logo">
+          Sistema de Fijación Espinal
+        </h1>
+        <div class="row">
+          <img src="images/produtos/waveflex/sistema-de-fijacion-espinal.png" class="img-responsive img-top-products center-block">
+        </div>
+        <div class="row">
+          <h1 class="text-center"></h1>
+          <div class="col-xs-12 col-sm-6" ng-repeat="product in waveflexproducts">
+            <div class="row row-center">
+              <div class="col-xs-12 col-sm-6">
+                <h4 class="text-right">{{product.name}}</h4>
+                <div ng-repeat="model in product.model">
+                  <p class="text-right">
+                    {{model.type}} ({{model.code}})
+                  </p>
+                </div>
+                <p class="text-right"><small><em><small>{{product.obs}}</small></em></small></p>
+              </div>
+              <div class="col-xs-12 col-sm-4">
+                <img src="images/produtos/waveflex/{{product.filename}}" class="img-responsive">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </uib-tab>
+    <uib-tab index="3">
+      <uib-tab-heading>
+        <img src="images/logos/color/iliad.png" class="tab-heading-img">
+      </uib-tab-heading>
+      <div class="container">
+        <h1 class="text-center">
+          <img src="images/logos/color/iliad.png" class="center-block img-responsive header-logo">
+          Spinal Fixation System for Deformity
+        </h1>
+        <div class="row">
+          <img src="images/produtos/iliad/sistema.png" class="img-responsive img-top-products center-block">
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6" ng-repeat="product in iliadproducts">
+            <h4>{{product.step}}) {{product.stepTitle}}</h4>
+            <div class="row">
+              <div class="col-xs-12 col-sm-4" ng-repeat="instrument in product.instruments">
+                <img src="images/produtos/iliad/{{instrument.filename}}" class="img-responsive center-block">
+                <p class="text-center"><small><em>{{instrument.name}}</em></small></p>
+              </div>
+              <p class="text-justify">{{product.description}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </uib-tab>
+    <uib-tab index="4">
+      <uib-tab-heading>
+        <img src="images/logos/color/st-reed.png" class="tab-heading-img">
+      </uib-tab-heading>
+      <div class="container">
+        <h1 class="text-center">
+          <img src="images/logos/color/st-reed.png" class="center-block img-responsive header-logo">
+          Neuroplastia Epidural Dirigível
+        </h1>
+        <div class="row">
+          <iframe width="560" height="315" class="center-block" src="https://www.youtube.com/embed/EF-8Gs32Aic" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6" ng-repeat="product in streedproducts">
+            <div class="row">
+              <img src="images/produtos/st-reed/{{product.filename}}" class="img-responsive center-block">
+              <h4>{{product.name}}</h4>
+              <p>({{product.code}})</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </uib-tab>
+    <uib-tab index="5">
+      <uib-tab-heading>
+        <img src="images/logos/color/veeler.png" class="tab-heading-img">
+      </uib-tab-heading>
+      <div class="container">
+        <h1 class="text-center">
+          <img src="images/logos/color/veeler.png" class="center-block img-responsive header-logo">
+          Cateter Epidural Dirigível com Vídeo
+        </h1>
+        <div class="row">
+          <iframe width="560" height="315" class="center-block" src="https://www.youtube.com/embed/4TV7EP9-Uz8" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6" ng-repeat="product in veelerproducts">
+              <img src="images/produtos/veeler/{{product.filename}}" class="img-responsive center-block">
+              <h4 class="text-center">{{product.name}}</h4>
+              <p class="text-center">{{product.description}}</p>
+          </div>
+        </div>
+      </div>
+    </uib-tab>
+    <uib-tab index="6">
+      <uib-tab-heading>
+        <img src="images/logos/color/pain-pressure.png" class="tab-heading-img">
+      </uib-tab-heading>
+      <div class="container">
+        <h1 class="text-center">
+          <img src="images/logos/color/pain-pressure.png" class="center-block img-responsive header-logo">
+          Kit descartável de discografia e discomanometria
+        </h1>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+            <a href="images/catalogos/catalogo-pain-pressure.png" target="_blank">
+              <img src="images/catalogos/catalogo-pain-pressure.png" class="img-responsive img-trigger">
+            </a>
+          </div>
+        </div>
+      </div>
+    </uib-tab>
+  </uib-tabset>
+</div>

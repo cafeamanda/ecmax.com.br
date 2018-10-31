@@ -1,0 +1,184 @@
+<div class="container-fluid container-content-app">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+    <li class="breadcrumb-item"><a ui-sref="app">Produtos</a></li>
+    <li class="breadcrumb-item active">ENT &amp; bucomaxilofacial</li>
+  </ol>
+  <h3 class="segmentos-header"><a ui-sref="app"><i class="fa fa-angle-double-left"></i> ENT &amp; bucomaxilofacial</a></h3>
+  <uib-tabset active="activeJustified" justified="true">
+    <uib-tab index="0">
+      <uib-tab-heading>
+        <img src="images/logos/color/practical.png" class="tab-heading-img">
+      </uib-tab-heading>
+      <div class="container-fluid">
+        <h1 class="text-center">
+          <img src="images/logos/color/practical.png" class="center-block img-responsive header-logo">
+          Kit de dissecção endonasal
+        </h1>
+        <div class="row">
+          <br>
+          <img src="images/produtos/practical/kit-de-disseccao-endonasal/kit-de-disseccao-endonasal.jpg" class="img-responsive center-block img-top-products">
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6" ng-repeat="product in practicaldissecproducts">
+            <div class="row row-center">
+              <div class="col-xs-12 col-sm-4 col-sm-offset-1">
+                <img src="images/produtos/practical/kit-de-disseccao-endonasal/{{product.filename}}.png" class="img-responsive center-block">
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <h4>{{product.name}}</h4>
+                <p>{{product.description}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <h1 class="text-center">
+          <img src="images/logos/color/practical.png" class="center-block img-responsive header-logo">
+          Kit Endoscópico Endonasal
+        </h1>
+        <div class="row">
+          <br>
+          <img src="images/produtos/practical/kit-endoscopico-endonasal/kit-endoscopico-endonasal.jpg" class="img-responsive center-block img-top-products">
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6" ng-repeat="product in practicalendoscoproducts">
+            <div class="row row-center">
+              <div class="col-xs-12 col-sm-4">
+                <img src="images/produtos/practical/kit-endoscopico-endonasal/{{product.filename}}" class="img-responsive center-block img-ungap">
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <h4>{{product.name}}</h4>
+                <p>{{product.description}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <h1 class="text-center">
+          <img src="images/logos/color/practical.png" class="center-block img-responsive header-logo">
+          Soluções descartáveis para cirurgias ORL
+        </h1>
+        <div class="row">
+          <br>
+          <img src="images/produtos/practical/canula-de-irrigacao-e-aspiracao-endonasal.png" class="img-responsive center-block img-top-products">
+          <h4 class="text-center">Cânula de irrigação e aspiração endonasal</h4>
+        </div>
+      </div>
+    </uib-tab>
+    <uib-tab index="1">
+      <uib-tab-heading>
+        <img src="images/logos/color/razek.png" class="tab-heading-img">
+      </uib-tab-heading>
+      <div class="container">
+        <h1 class="text-center">
+          <img src="images/logos/color/razek.png" class="center-block img-responsive header-logo">
+          Kit de cânulas para cirurgia de ATM
+        </h1>
+        <div class="row">
+          <br>
+          <img src="images/produtos/razek/kit-canulas-para-cirurgia-de-atm/kit-canulas-para-cirurgia-endoscopica-de-atm.jpg" class="img-responsive center-block">
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6" ng-repeat="product in razekatmproducts">
+            <p>{{product.name}}</p>
+            <div class="row" ng-repeat="filename in product.filenames">
+              <div class="col-xs-12 col-sm-6">
+                <img src="images/produtos/razek/kit-canulas-para-cirurgia-de-atm/{{filename.body}}" class="img-responsive center-block">
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <img src="images/produtos/razek/kit-canulas-para-cirurgia-de-atm/{{filename.tip}}" class="img-responsive center-block">
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <h1 class="text-center">
+            <img src="images/logos/color/razek.png" class="center-block img-responsive header-logo">
+            Brocas e Fresas
+          </h1>
+          <div class="col-xs-12 col-sm-6" ng-repeat="broca in razekbrocas">
+            <div class="row">
+              <div class="col-xs-12 col-sm-4">
+                <img src="images/produtos/razek/brocas-e-fresas/{{broca.filename}}" class="img-responsive center-block horizontal-flip">
+              </div>
+              <div class="col-xs-12 col-sm-8">
+                <h4>{{broca.name}}</h4>
+                <p>({{broca.model}})</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <h1 class="text-center">
+          <img src="images/logos/color/razek.png" class="center-block img-responsive header-logo">
+          Tipos de encaixes
+        </h1>
+        <div class="row">
+          <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+            <img src="images/produtos/razek/brocas-e-fresas/tipos-de-encaixe.png" class="img-responsive center-block">
+          </div>
+        </div>
+      </div>
+    </uib-tab>
+    <uib-tab index="2">
+      <uib-tab-heading>
+        <img src="images/logos/color/bramsys.png" class="tab-heading-img">
+      </uib-tab-heading>
+      <div class="container">
+        <h1 class="text-center">
+          <img src="images/logos/color/bramsys.png" class="center-block img-responsive header-logo">
+          Fixador de Crânio
+        </h1>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+          <p class="text-center">O fixador de crânio da Bramsys proporciona condições favoráveis aos cirurgiões durante o procedimento, por favorecer a posição ideal da cabeça do paciente.</p>
+        </div>
+      </div>
+      <div class="row">
+        <img src="images/catalogos/fixador-de-cranio-2.jpg" class="img-responsive center-block">
+      </div>
+    </uib-tab>
+    <uib-tab index="3">
+      <uib-tab-heading>
+        <img src="images/logos/color/acciax.png" class="tab-heading-img">
+      </uib-tab-heading>
+      <div class="container">
+        <h1 class="text-center">
+          <img src="images/logos/color/acciax.png" class="center-block img-responsive header-logo">
+        </h1>
+        <div class="row">
+          <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+            <p class="text-center">Nosso sistema de placas, malhas e parafusos Acciax, voltado ao atendimento de cirurgias de cabeça e pescoço e bucomaxilofacial, apresenta material qualidade, praticidade e fino acabamento. Trata-se de um sistema com tradição de mercado e grande aceitação.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6">
+            <a href="images/catalogos/catalogo-acciax.png" target="_blank"><img src="images/catalogos/catalogo-acciax.png" class="img-responsive img-trigger center-block" alt="Sistema de parafusos Acciax"></a>
+          </div>
+          <div class="col-xs-12 col-sm-6">
+            <a href="images/catalogos/catalogo-acciax-1.png" target="_blank"><img src="images/catalogos/catalogo-acciax-1.png" class="img-responsive img-trigger center-block" alt="Sistema de placas 1,5 milímetros Acciax - 1 de 3"></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6">
+            <a href="images/catalogos/catalogo-acciax-2.png" target="_blank"><img src="images/catalogos/catalogo-acciax-2.png" class="img-responsive img-trigger center-block" alt="Sistema de parafusos 1,5 milímetros Acciax - 2 de 3"></a>
+          </div>
+          <div class="col-xs-12 col-sm-6">
+            <a href="images/catalogos/catalogo-acciax-3.png" target="_blank"><img src="images/catalogos/catalogo-acciax-3.png" class="img-responsive img-trigger center-block" alt="Sistema de parafusos 1,5 milímetros Acciax - 3 de 3"></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6">
+            <a href="images/catalogos/catalogo-acciax-4.png" target="_blank"><img src="images/catalogos/catalogo-acciax-4.png" class="img-responsive img-trigger center-block" alt="Sistema de placas 2,0 milímetros"></a>
+          </div>
+          <div class="col-xs-12 col-sm-6">
+            <a href="images/catalogos/catalogo-acciax-5.png" target="_blank"><img src="images/catalogos/catalogo-acciax-5.png" class="img-responsive img-trigger center-block" alt="Sistema de placas 2,4 a 2,7 milímetros"></a>
+          </div>
+        </div>
+      </div>
+    </uib-tab>
+  </uib-tabset>
+</div>
